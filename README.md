@@ -15,7 +15,7 @@
 npm install reddit
 ```
 
-This package is used by [BitMIdi](https://bitmidi.com) to post MIDI files to the [/r/BitMidi](https://www.reddit.com/r/BitMidi/) subreddit.
+This package is used by [BitMidi](https://bitmidi.com) to post MIDI files to the [/r/BitMidi](https://www.reddit.com/r/BitMidi/) subreddit.
 
 ## Features
 
