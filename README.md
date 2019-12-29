@@ -98,4 +98,6 @@ Invoke the Reddit API using the `DELETE` HTTP method.
 
 ## License
 
-The Prosperity Public License. Copyright (c) [Feross Aboukhadijeh](http://feross.org). To obtain a commercial license, visit [feross.org/commercial](https://feross.org/commercial).
+The Prosperity Public License. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+
+To obtain a commercial license, visit [feross.org/commercial](https://feross.org/commercial).
