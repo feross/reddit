@@ -7,7 +7,7 @@
 [downloads-image]: https://img.shields.io/npm/dm/reddit.svg
 [downloads-url]: https://npmjs.org/package/reddit
 
-### Simple, robust Reddit API client
+### Simple Reddit API client
 
 ## Install
 
