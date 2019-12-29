@@ -46,13 +46,27 @@ const reddit = new Reddit({
 })
 
 // Submit a link to the /r/BitMidi subreddit
-await reddit.post('/api/submit', {
+const res = await reddit.post('/api/submit', {
   sr: 'BitMidi',
   kind: 'link',
   resubmit: true,
-  title: 'Testing out the reddit npm package!',
+  title: 'Super Mario 64 - Medley.mid',
   url: 'https://bitmidi.com'
 })
+
+console.log(res)
+// Prints:
+// {
+//   json: {
+//     errors: [],
+//     data: {
+//       url: 'https://www.reddit.com/r/BitMidi/comments/eh0l79/super_mario_64_medleymid/',
+//       drafts_count: 0,
+//       id: 'eh0l79',
+//       name: 't3_eh0l79'
+//     }
+//   }
+// }
 ```
 
 ## API
