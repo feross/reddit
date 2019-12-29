@@ -19,9 +19,9 @@ This package is used by [BitMidi](https://bitmidi.com) to post MIDI files to the
 
 ## Features
 
-  - Lightweight
-  - Easy to audit the source code
-  - Powered by the [Reddit API](https://www.reddit.com/dev/api/)
+- Lightweight – no unecessary dependencies, easy-to-audit source code
+- Modern API – uses async/await and promises
+- Powered by the [official Reddit API](https://www.reddit.com/dev/api/)
 
 ## Usage
 
