@@ -1,6 +1,6 @@
 # The Prosperity Public License 3.0.0
 
-Contributor: Feross Aboukhadijeh (https://feross.org)
+Contributor: [Feross Aboukhadijeh](https://feross.org)
 
 Source Code: https://github.com/feross/reddit
 
