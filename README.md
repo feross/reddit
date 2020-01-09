@@ -47,10 +47,10 @@ const reddit = new Reddit({
 
 // Submit a link to the /r/BitMidi subreddit
 const res = await reddit.post('/api/submit', {
-  sr: 'BitMidi',
+  sr: 'WeAreTheMusicMakers',
   kind: 'link',
   resubmit: true,
-  title: 'Super Mario 64 - Medley.mid',
+  title: 'BitMidi – 100K+ Free MIDI files',
   url: 'https://bitmidi.com'
 })
 
@@ -60,10 +60,10 @@ console.log(res)
 //   json: {
 //     errors: [],
 //     data: {
-//       url: 'https://www.reddit.com/r/BitMidi/comments/eh0l79/super_mario_64_medleymid/',
+//       url: 'https://www.reddit.com/r/WeAreTheMusicMakers/comments/96ak55/',
 //       drafts_count: 0,
-//       id: 'eh0l79',
-//       name: 't3_eh0l79'
+//       id: '96ak55',
+//       name: 't3_96ak55'
 //     }
 //   }
 // }
