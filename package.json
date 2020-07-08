@@ -1,7 +1,7 @@
 {
   "name": "reddit",
   "description": "Simple Reddit API client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
