@@ -123,15 +123,14 @@ class Reddit {
 
       // Request JSON API response type
       data.api_type = 'json'
+      opts.json = true
 
       if (method === 'GET') {
         opts.url += '?' + querystring.encode(data)
       } else if (method === 'POST') {
         opts.form = data
-        opts.json = true
       } else if (method === 'PATCH' || method === 'PUT' || method === 'DELETE') {
         opts.body = data
-        opts.json = true
       }
 
       debug(`Making ${method} request to ${url}`)
