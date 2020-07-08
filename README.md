@@ -86,27 +86,27 @@ The following `opts` properties are optional:
 
 - `opts.userAgent` - String to use as the `User-Agent` header in http requests
 
-### `reddit.get(url, data)`
+### `reddit.get(url, [data])`
 
 Invoke the Reddit API using the `GET` HTTP method.
 
 The `url` parameter is used to specify which API to invoke. For example, `/api/submit` or `/api/vote`. A complete listing of possible APIs is available in the [Reddit API documentation](https://www.reddit.com/dev/api/).
 
-The `data` parameter is used to specify relevant data for the selected API. The necessary data varies depending on which API is being used. Again, see the [Reddit API documentation](https://www.reddit.com/dev/api/).
+The optional `data` parameter is used to specify relevant data for the selected API. The necessary data varies depending on which API is being used. Again, see the [Reddit API documentation](https://www.reddit.com/dev/api/).
 
-### `reddit.post(url, data)`
+### `reddit.post(url, [data])`
 
 Invoke the Reddit API using the `POST` HTTP method.
 
-### `reddit.patch(url, data)`
+### `reddit.patch(url, [data])`
 
 Invoke the Reddit API using the `PATCH` HTTP method.
 
-### `reddit.put(url, data)`
+### `reddit.put(url, [data])`
 
 Invoke the Reddit API using the `PUT` HTTP method.
 
-### `reddit.delete(url, data)`
+### `reddit.delete(url, [data])`
 
 Invoke the Reddit API using the `DELETE` HTTP method.
 

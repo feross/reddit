@@ -19,23 +19,23 @@ class Reddit {
     this.tokenExpireDate = 0
   }
 
-  async get (url, data) {
+  async get (url, data = {}) {
     return this._sendRequest('GET', API_BASE_URL + url, data)
   }
 
-  async post (url, data) {
+  async post (url, data = {}) {
     return this._sendRequest('POST', API_BASE_URL + url, data)
   }
 
-  async patch (url, data) {
+  async patch (url, data = {}) {
     return this._sendRequest('PATCH', API_BASE_URL + url, data)
   }
 
-  async put (url, data) {
+  async put (url, data = {}) {
     return this._sendRequest('PUT', API_BASE_URL + url, data)
   }
 
-  async delete (url, data) {
+  async delete (url, data = {}) {
     return this._sendRequest('DELETE', API_BASE_URL + url, data)
   }
 
