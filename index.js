@@ -124,8 +124,7 @@ class Reddit {
       data.api_type = 'json'
 
       if (method === 'GET') {
-        opts.url += '?'
-        opts.url += querystring.encode(data)
+        opts.url += '?' + querystring.encode(data)
       } else if (method === 'POST') {
         opts.form = data
         opts.json = true
