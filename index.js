@@ -1,3 +1,4 @@
+/*! reddit. See LICENSE.md License. Feross Aboukhadijeh <https://feross.org/opensource> */
 const debug = require('debug')('reddit')
 const get = require('simple-get')
 const querystring = require('querystring')
