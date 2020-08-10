@@ -45,7 +45,14 @@ class Reddit {
 
     const errors = body && body.json && body.json.errors
     if (errors && errors.length > 0) {
-      throw new Error(errors.map(error => `${error[0]}: ${error[1]} (${error[2]})`).join('. '))
+      const err = new Error(
+        errors.map(
+          error => `${error[0]}: ${error[1]} (${error[2]})`
+        ).join('. ')
+      )
+      err.code = errors[0][0]
+      err.codes = errors.map(error => error[0])
+      throw err
     }
 
     return body
