@@ -94,7 +94,7 @@ class Reddit {
           } = body
 
           if (tokenType == null || accessToken == null) {
-            return reject(new Error(`Cannot obtain token for username ${this.username}. ${body.error}.`))
+            return reject(new Error(`Cannot obtain token for username ${this.username}. ${body.error}. ${body.error_description}.`))
           }
 
           this.token = `${tokenType} ${accessToken}`
@@ -105,11 +105,11 @@ class Reddit {
           return resolve(this.token)
         } else if (statusType === 4) {
           return reject(
-            new Error(`Cannot obtain token for username ${this.username}. Did you give ${this.username} access in your Reddit App Preferences? ${body.error}. Status code: ${res.statusCode}`)
+            new Error(`Cannot obtain token for username ${this.username}. Did you give ${this.username} access in your Reddit App Preferences? ${body.error}. ${body.error_description}. Status code: ${res.statusCode}`)
           )
         } else {
           return reject(
-            new Error(`Cannot obtain token for username ${this.username}. ${body.error}. Status code: ${res.statusCode}`)
+            new Error(`Cannot obtain token for username ${this.username}. ${body.error}. ${body.error_description}. Status code: ${res.statusCode}`)
           )
         }
       })
