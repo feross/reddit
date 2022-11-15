@@ -100,7 +100,7 @@ class Reddit {
           this.token = `${tokenType} ${accessToken}`
           // Shorten token expiration time by half to avoid race condition where
           // token is valid at request time, but server will reject it
-          this.tokenExpireDate = ((Date.now() / 1000) + expiresIn) / 2
+          this.tokenExpireDate = ((Date.now() / 1000) + (expiresIn / 2))
 
           return resolve(this.token)
         } else if (statusType === 4) {
